@@ -1,0 +1,307 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Fraunces&family=Hanken+Grotesk&family=Josefin+Sans:ital,wght@1,300;1,400;1,600&family=Kumbh+Sans:wght@300&family=League+Spartan&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,900;1,800&family=Outfit&family=Poppins:wght@400;500;600;700&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+      --Red: hsl(0, 100%, 74%);
+      --Green: hsl(154, 59%, 51%);
+      --Blue: hsl(248, 32%, 49%);
+      --Dark-Blue: hsl(249, 10%, 26%);
+      --Grayish-Blue: hsl(246, 25%, 77%);
+  }
+
+  /* Intro Wapper */
+  .wapper-container {
+      background-color: hsl(0, 100%, 74%);
+      background-image: url(../images/bg-intro-mobile.png);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .wapper {
+      padding: 20px;
+      color: white;
+  }
+
+  /* Intro Title */
+
+  .intro h1 {
+      font-size: 25px;
+      font-weight: 500;
+      padding: 41px 0 14px 0;
+      text-align: center;
+  }
+
+  .intro p {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 30px;
+      padding-bottom: 20px;
+  }
+
+  .Intor-Try {
+      background-color: var(--Blue);
+      font-size: 13px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-radius: 7px;
+      box-shadow: 0px 5px 2px 0px hsl(359.42deg 49.06% 58.43%);
+      margin-bottom: 40px;
+  }
+
+  .Intor-Try span {
+      color: var(--Grayish-Blue);
+  }
+
+  /* Input Desing */
+
+  .intro-input-intro {
+      background-color: white;
+      padding: 40px 0px 40px 13px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      color: black;
+      box-shadow: 0px 8px 2px 0px hsl(357.98deg 63.64% 63.33%);
+  }
+
+  .form {
+      padding: 10px 0px;
+  }
+
+  /* Input Name */
+
+  input#first {
+      background: transparent;
+      border: none;
+      padding: 10px 70px 10px 10px;
+      outline: 1px solid var(--Grayish-Blue);
+      border-radius: 8px;
+  }
+
+  input#text {
+      background: transparent;
+      border: none;
+      padding: 10px 70px 10px 10px;
+      outline: 1px solid var(--Grayish-Blue);
+      border-radius: 8px;
+  }
+
+  input#email {
+      background: transparent;
+      border: none;
+      padding: 10px 70px 10px 10px;
+      outline: 1px solid var(--Grayish-Blue);
+      border-radius: 8px;
+  }
+
+  input#password {
+      background: transparent;
+      border: none;
+      padding: 10px 70px 10px 10px;
+      outline: 1px solid var(--Grayish-Blue);
+      border-radius: 8px;
+  }
+
+  /* Button  */
+
+  #btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid var(--Green);
+    background-color: var(--Green);
+    box-shadow: 0px 5px 2px 0px hsl(154.35deg 58.97% 45.88%);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+  p.intor-title {
+      text-align: center;
+      font-size: 11px;
+      margin: 0 17px;
+  }
+
+  /* User Name */
+  p.attribution {
+      text-align: center;
+      font-size: 13px;
+      padding-bottom: 26px;
+      color: aliceblue;
+  }
+
+  /* Error FONT */
+  #error-msg,
+  #error-text,
+  #msg,
+  #password-msg {
+      color: red;
+      font-size: 15px;
+  }
+
+  @media (min-width:425px) {
+      .intro-input-intro {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+  }
+
+  @media (min-width:768px) {
+      .intro-component {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+      }
+
+      .intro {
+          padding: 0px 20px;
+      }
+
+      .intro h1 {
+          font-size: 39px;
+          font-weight: 500;
+          padding: 41px 0 15px 0;
+          text-align: start;
+      }
+
+      .intro p {
+          font-size: 12px;
+          text-align: start;
+          padding-bottom: 0px;
+      }
+
+      .intro-input-intro {
+          padding: 20px 23px 20px 13px;
+          margin-bottom: 0px;
+      }
+  }
+  @media (min-width:1024px) {
+    .intro-component {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    .intro {
+        width: 500px;
+    }
+  }
+  @media (min-width:1440px) {
+    .intro-component {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    .intro {
+        width: 470px;
+        padding: 0px;
+    }
+    .intro h1{
+        font-size: 48px;
+    }
+    .intro p {
+        font-size: 15px;
+        text-align: start;
+        padding: 0px;
+    }
+
+
+    /* Input  */
+
+    input#first {
+        padding: 13px 200px 13px 10px;
+    }
+    input#text {
+        padding: 13px 200px 13px 10px;
+    }
+  
+    input#email {
+       padding: 13px 200px 13px 10px;
+    }
+  
+    input#password {
+        padding: 13px 200px 13px 10px;
+    }
+  
+    /* Button  */
+  
+    #btn {
+        padding: 8px 64px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+
+  }
+
+  @media (min-width:1366px) {
+    .wapper-container {
+        background-color: hsl(0, 100%, 74%);
+        background-image: url(../images/bg-intro-desktop.png);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    input#first {
+        padding: 13px 200px 13px 10px;
+    }
+    input#text {
+        padding: 13px 200px 13px 10px;
+    }
+  
+    input#email {
+       padding: 13px 200px 13px 10px;
+    }
+  
+    input#password {
+        padding: 13px 200px 13px 10px;
+    }
+
+    #error-msg, #error-text, #msg, #password-msg {
+        color: red;
+        font-size: 15px;
+        display: flex;
+        justify-content: end;
+    }
+  
+    /* Button  */
+  
+    #btn {
+        padding: 8px 64px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+
+    
+.Intor-Try {
+    font-size: 13px;
+    justify-content: center;
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+}
+  }
